@@ -29,5 +29,9 @@ pkgs.mkShell {
 
   NIX_LDFLAGS = "-L${libiconvPath}"; # -L${./lib}
   RUST_SRC_PATH = "${rust_channel}/lib/rustlib/src/rust/library";
+
+  shellHook = ''
+    export PATH="$PATH:${rust_channel}/bin"
+  '';
 }
 

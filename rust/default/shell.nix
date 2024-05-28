@@ -7,8 +7,7 @@ let
 in
 pkgs.mkShell {
   buildInputs = [
-    pkgs.rustc
-    pkgs.cargo
+    pkgs.rustup
 
     # Required for building the project
     pkgs.libiconv
@@ -23,6 +22,6 @@ pkgs.mkShell {
   ];
 
   NIX_LDFLAGS = "-L${libiconvPath}"; # -L${./lib}
-  RUST_SRC_PATH = "${pkgs.rustc}/lib/rustlib/src/rust/library";
+  RUST_SRC_PATH = "${pkgs.rust.packages.stable.rustPlatform.rustLibSrc}";
 }
 
