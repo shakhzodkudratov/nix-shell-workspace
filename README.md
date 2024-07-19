@@ -6,7 +6,7 @@
 - type ```nix-shell``` in your terminal (append ```--run zsh``` if you're using not bash)
 - profit
 
-# What if this repo doesn't contain an application you needed?
+# What if this repo doesn't contain a package you need?
 - search your package in https://search.nixos.org/packages
 - append ```<package-name>``` into ```buildInputs = []```
 
