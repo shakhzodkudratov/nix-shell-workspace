@@ -12,8 +12,6 @@ with nixpkgs;
 pkgs.mkShell {
   nativeBuildInputs = [
     pkg-config
-    pkgs.rustc
-    pkgs.cargo
 
     # Required for building the project
     pkgs.libiconv
