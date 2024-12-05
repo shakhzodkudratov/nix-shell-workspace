@@ -2,4 +2,7 @@
   buildInputs = [
     pkgs.go
   ];
+
+  GOROOT = "${pkgs.go}/share/go";
+  GOBIN = "${pkgs.go}/share/go/bin";
 }
