@@ -4,5 +4,7 @@ pkgs.mkShell {
     pkgs.flutter
     pkgs.android-tools
   ];
+
+  FLUTTER_ROOT = "${pkgs.flutter}";
 }
 
