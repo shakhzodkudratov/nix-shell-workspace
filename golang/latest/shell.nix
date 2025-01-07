@@ -11,4 +11,6 @@
 
   GOROOT = "${pkgs.go}/share/go";
   GOBIN = "${pkgs.go}/share/go/bin";
+  # https://discourse.nixos.org/t/golang-delve-debugger-with-nix-flake-issue/22740
+  hardeningDisable = [ "all" ];
 }
