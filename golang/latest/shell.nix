@@ -4,9 +4,10 @@
   };
   in import nixpkgs-unstable {}
 }: pkgs.mkShell {
-  buildInputs = [
-    pkgs.go
-    pkgs.ginkgo
+  buildInputs = with pkgs; [
+    go
+    ginkgo
+    go-migrate
   ];
 
   GOROOT = "${pkgs.go}/share/go";
