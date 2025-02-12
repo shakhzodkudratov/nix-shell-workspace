@@ -8,6 +8,7 @@
     go
     ginkgo
     go-migrate
+    golangci-lint
   ];
 
   GOROOT = "${pkgs.go}/share/go";
