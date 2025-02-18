@@ -9,6 +9,8 @@
     ginkgo
     go-migrate
     golangci-lint
+    gopls
+    delve
   ];
 
   GOROOT = "${pkgs.go}/share/go";
